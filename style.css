@@ -1,6 +1,32 @@
 body {
-  background-color: #FFEECF;
+  background-color: #f9f8eb;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+#sidebar {
+  position: fixed;
+  width: 15%;
+  min-width: 100px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 100px 30px;
+  font-size: 25px;
+  /*border-right: 2px solid rgba(0,0,0,0.5);*/
+  background-color: #7293a0;
+}
+
+#sidebar a {
+  font-family: 'Roboto Slab', serif;
+  color: rgba(255,255,255,0.5);
+}
+
+#sidebar a:hover {
+  color: rgba(0,0,0,0.3);
+}
+
+#page-content {
+  margin-left: 300px;
 }
 
 #profile {
@@ -39,7 +65,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: #4c3b4d;
+  color: #155e63;
   font-size: 30px;
 }
 
@@ -64,9 +90,10 @@ a:hover {
   color: rgba(255,255,255,0.4);
 }
 
-div {
-  width: 700px;
-  background-color: #af9caf;
+.block {
+  width: 70%;
+  max-width: 700px;
+  background-color: #53aaaa;
   margin: 25px auto;
   padding: 15px;
   border-radius: 2px;
@@ -90,24 +117,62 @@ div {
   text-align: justify;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
   /* For a screen < 720px, this CSS will be read */
-  div {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  div {
-    width: 300px;
+  .block {
+    margin-left: 50px;
   }
 
-  .list-inline >li {
-  padding: 20px;
+  #sidebar {
+    position: fixed;
+    padding: 100px 30px;
+    font-size: 25px;
+    background-color: #7293a0;
   }
 
   td {
     display: block;
     padding-bottom: 15px;
+  }
+
+  #profile {
+    width: 90%;
+  }
+
+  .film_pic {
+    width: 90%;
+  }
+
+  #page-content {
+    margin-left: 150px;
+  }
+
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .block {
+    min-width: 400px;
+    margin-left: 50px;
+  }
+
+  .list-inline >li {
+    padding: 20px;
+  }
+
+  td {
+    display: block;
+    padding-bottom: 15px;
+  }
+
+  #profile {
+    width: 90%;
+  }
+
+  .film_pic {
+    width: 90%;
+  }
+
+  #page-content {
+    margin-left: 150px;
   }
 }

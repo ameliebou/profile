@@ -7,71 +7,81 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="text-center">
-    <img src="images/photo_AB.jpg" alt="Amélie Boudier" id="profile">
-    <h1>Amélie Boudier</h1>
-    <h2>Developer</h2>
-    <p class="text-justify">I have worked two years as a PR and SEO manager in Berlin. After learning a lot about how to communicate about a website and its services, I realised that what really thrilled me was to actually know how the product works. I am now attending a computer programming bootcamp and have so much fun learning so much every day.</p>
+  <div id="sidebar">
+    <a href="#profile">My profile</a><br/>
     <br/>
-    <h3>Languages:</h3>
-    <ul class="list-inline">
-      <li>French - <em>mother tongue</em></li>
-      <li>English - <em>bilingual</em></li>
-      <li>German - <em>fluent</em></li>
-    </ul>
-    <h3>Programming languages:</h3>
-    <ul class="list-inline">
-      <li>Ruby</li>
-      <li>SQL</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Javascript</li>
-    </ul>
+    <a href="#movies">Movies</a><br/>
+    <br/>
+    <a href="#about">About this page</a><br/>
   </div>
 
-  <div class="text-center">
-    <h2>Find me on social media</h2>
-    <ul  class="list-inline">
-      <li><a href="https://www.facebook.com/amelie.boudier.1"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-      <li><a href="www.linkedin.com/in/amelie-boudier"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-    </ul>
-  </div>
+  <div id="page-content">
+    <div class="text-center block">
+      <img src="images/photo_AB.jpg" alt="Amélie Boudier" id="profile">
+      <h1>Amélie Boudier</h1>
+      <h2>Developer in progress</h2>
+      <p class="text-justify">I have worked two years as a PR and SEO manager in Berlin. After learning a lot about how to communicate about a website and its services, I realised that what really thrilled me was to actually know how the product works. I am now attending a computer programming bootcamp and have so much fun learning so much every day.</p>
+      <br/>
+      <h3>Languages:</h3>
+      <ul class="list-inline">
+        <li>French - <em>mother tongue</em></li>
+        <li>English - <em>bilingual</em></li>
+        <li>German - <em>fluent</em></li>
+      </ul>
+      <h3>Programming languages:</h3>
+      <ul class="list-inline">
+        <li>Ruby</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+      </ul>
+    </div>
 
-  <div class="table text-center">
-    <h2>My favorite movies</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><img src="images/eternal.jpg" alt="Eternal Sunshine of the Spotless Mind" class="film_pic"></td>
-          <td class="margin">
-            <h3>Eternal Sunshine of the Spotless Mind</h3>
-            <p><strong>Director</strong>: Michel Gondry</p>
-            <p class="text-justify">What if you could mipe out someone from your mind? After a bad break-up, Joel decides to go for a drastic measure and erases Clementine from his mind. This bittersweet movie shows the fight Joel's mind goes through while his memories are being destroyed.</p>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="images/big_lebowski.jpg" alt="The Big Lebowski" class="film_pic"></td>
-          <td class="margin">
-            <h3>The Big Lebowski</h3>
-            <p><strong>Director</strong>: The Coen Brothers</p>
-            <p class="text-justify">It all started with a guy peeing on a carpet. But not on any carpet, on the carpet of the Dude. The Dude will go on a long quest to get a new carpet back. He will take along with him his two bowling partners on a very troublesome journey that involves crazy German guys, a homonym millionnaire and a toe.</p>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="images/casablanca.jpg" alt="Casablanca" class="film_pic"></td>
-          <td class="margin">
-            <h3>Casablanca</h3>
-            <p><strong>Director</strong>: Michael Curtis</p>
-            <p class="text-justify">Casablanca during WW2. Rick is the cynical owner of a café where illegal refugees as well as German officers like to change their minds. All went well until the woman who broke his heart steps into his joint with her husband and begs him to help them out to find a secure passage to the USA. Here's looking at you kid.</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="text-center block">
+      <h2>Find me on social media</h2>
+      <ul  class="list-inline">
+        <li><a href="https://www.facebook.com/amelie.boudier.1"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="www.linkedin.com/in/amelie-boudier"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+      </ul>
+    </div>
 
-  <div class="footer text-center">
-    <h2>About this page</h2>
-    <p>Created in 2018, during the <a href="https://www.lewagon.com">Le Wagon</a>'s bootcamp.</p>
+    <div class="table text-center block" id="movies">
+      <h2>My favorite movies</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><img src="images/eternal.jpg" alt="Eternal Sunshine of the Spotless Mind" class="film_pic"></td>
+            <td class="margin">
+              <h3>Eternal Sunshine of the Spotless Mind</h3>
+              <p><strong>Director</strong>: Michel Gondry</p>
+              <p class="text-justify">What if you could mipe out someone from your mind? After a bad break-up, Joel decides to go for a drastic measure and erases Clementine from his mind. This bittersweet movie shows the fight Joel's mind goes through while his memories are being destroyed.</p>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/big_lebowski.jpg" alt="The Big Lebowski" class="film_pic"></td>
+            <td class="margin">
+              <h3>The Big Lebowski</h3>
+              <p><strong>Director</strong>: The Coen Brothers</p>
+              <p class="text-justify">It all started with a guy peeing on a carpet. But not on any carpet, on the carpet of the Dude. The Dude will go on a long quest to get a new carpet back. He will take along with him his two bowling partners on a very troublesome journey that involves crazy German guys, a homonym millionnaire and a toe.</p>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/casablanca.jpg" alt="Casablanca" class="film_pic"></td>
+            <td class="margin">
+              <h3>Casablanca</h3>
+              <p><strong>Director</strong>: Michael Curtis</p>
+              <p class="text-justify">Casablanca during WW2. Rick is the cynical owner of a café where illegal refugees as well as German officers like to change their minds. All went well until the woman who broke his heart steps into his joint with her husband and begs him to help them out to find a secure passage to the USA. Here's looking at you kid.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer text-center block" id="about">
+      <h2>About this page</h2>
+      <p>Created in 2018, during the <a href="https://www.lewagon.com">Le Wagon</a>'s bootcamp.</p>
+    </div>
   </div>
 </body>
 </html>
